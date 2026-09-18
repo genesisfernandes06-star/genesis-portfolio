@@ -173,7 +173,7 @@ export default function Home() {
           </p>
 
           <p className="font-semibold mt-1">
-            &lt;things /&gt;
+            practical applications
           </p>
 
         </div>
