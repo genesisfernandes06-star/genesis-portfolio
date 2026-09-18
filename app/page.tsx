@@ -1,3 +1,5 @@
+"use client";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f7f6f2] text-[#171717]">
@@ -305,7 +307,7 @@ export default function Home() {
             <img
               src="/projects/notes-exchange.png"
               alt="Notes Exchange application"
-              className="w-full h-48 object-cover rounded-xl border border-slate-800"
+              className="w-full h-auto rounded-xl border border-slate-800"
             />
             <ProjectCard
               number="01"
@@ -320,7 +322,7 @@ export default function Home() {
             <img
               src="/projects/smart-classroom.png"
               alt="Smart Classroom Finder Application"
-              className="w-full h-48 object-cover rounded-xl border border-slate-800"
+              className="w-full h-auto rounded-xl border border-slate-800"
             />
             <ProjectCard
               number="02"
@@ -331,12 +333,11 @@ export default function Home() {
           </div>
 
 
-            <div className="md:col-span-2">
-
+            <div className="flex flex-col gap-3">
                <img
               src="/projects/daily-quiz.png"
               alt="Daily Quiz Application"
-              className="w-full h-48 object-cover rounded-xl border border-slate-800"
+              className="w-full h-auto object-contain bg-slate-950 rounded-xl border border-slate-800"
             />
             <ProjectCard
               number="03"
@@ -384,7 +385,7 @@ export default function Home() {
             </p>
 
             <p className="text-4xl font-bold mt-2">
-              8.95
+              8.81
             </p>
 
           </div>
@@ -431,7 +432,7 @@ export default function Home() {
             </a>
 
             <a
-              href="linkedin.com/in/genesis-fernandes-1a6a2b37a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              href="https://www.linkedin.com/in/genesis-fernandes-1a6a2b37a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-black px-7 py-3 rounded-full"
@@ -451,7 +452,7 @@ export default function Home() {
 
 
              <a
-              href="/resume.pdf"
+              href="/resume(1).pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-black px-7 py-3 rounded-full"
@@ -484,6 +485,17 @@ export default function Home() {
 
       </footer>
 
+      {/* GLOBAL SCROLL TO TOP BUTTON */}
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className="fixed bottom-6 right-6 z-40 bg-slate-800/80 hover:bg-purple-600 text-white p-3 rounded-full shadow-lg backdrop-blur-md border border-slate-700 transition-all duration-300 hover:scale-110 flex items-center justify-center"
+        aria-label="Scroll to top"
+      >
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7"></path>
+        </svg>
+      </button>
+
     </main>
   );
 }
@@ -499,13 +511,13 @@ function SkillCard({
 
   return (
 
-    <div className="border border-gray-200 rounded-2xl p-7 hover:-translate-y-1 transition duration-300">
+    <div className="border border-gray-200 hover:border-purple-600 bg-white/40 backdrop-blur-sm rounded-2xl p-7 hover:-translate-y-1 transition-all duration-300 shadow-sm hover:shadow-md">
 
-      <h3 className="font-semibold mb-4">
+      <h3 className="font-semibold mb-4 text-black">
         {title}
       </h3>
 
-      <p className="text-gray-500 leading-relaxed">
+      <p className="text-gray-600 leading-relaxed text-sm">
         {skills}
       </p>
 
