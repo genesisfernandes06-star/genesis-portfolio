@@ -452,7 +452,7 @@ export default function Home() {
 
 
              <a
-              href="/resume(1).pdf"
+              href="/Resume(1).pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-black px-7 py-3 rounded-full"
