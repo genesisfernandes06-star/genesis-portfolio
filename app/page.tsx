@@ -313,7 +313,7 @@ export default function Home() {
               number="01"
               tech="JAVASCRIPT"
               title="Notes Exchange"
-              description="A platform designed to make sharing and accessing academ..."
+              description="A platform designed to make sharing and accessing academic notes simple and convenient."
             />
           </div>
 
