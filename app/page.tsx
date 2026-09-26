@@ -305,12 +305,26 @@ export default function Home() {
 
           <div className="flex flex-col gap-3">
             <img
-              src="/projects/notes-exchange.png"
-              alt="Notes Exchange application"
-              className="w-full h-auto rounded-xl border border-slate-800"
+              src="/projects/stockwise.png"
+              alt="StockWise inventory management application"
+              className="w-full aspect-video object-cover rounded-xl border border-slate-800"
             />
             <ProjectCard
               number="01"
+              tech="PYTHON . FLASK . POSTGRESQL"
+              title="StockWise"
+              description="A smart inventory management system for tracking products, sales, stock levels, and demand."
+            />
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <img
+              src="/projects/notes-exchange.png"
+              alt="Notes Exchange application"
+              className="w-full aspect-video object-cover rounded-xl border border-slate-800"
+            />
+            <ProjectCard
+              number="02"
               tech="JAVASCRIPT"
               title="Notes Exchange"
               description="A platform designed to make sharing and accessing academic notes simple and convenient."
@@ -322,10 +336,10 @@ export default function Home() {
             <img
               src="/projects/smart-classroom.png"
               alt="Smart Classroom Finder Application"
-              className="w-full h-auto rounded-xl border border-slate-800"
+              className="w-full aspect-video object-cover rounded-xl border border-slate-800"
             />
             <ProjectCard
-              number="02"
+              number="03"
               tech="FLASK . POSTGRESQL"
               title="Smart Classroom Finder"
               description="A classroom-finding application developed as a practical academic project."
@@ -337,10 +351,10 @@ export default function Home() {
                <img
               src="/projects/daily-quiz.png"
               alt="Daily Quiz Application"
-              className="w-full h-auto object-contain bg-slate-950 rounded-xl border border-slate-800"
+              className="w-full aspect-video object-cover rounded-xl border border-slate-800"
             />
             <ProjectCard
-              number="03"
+              number="04"
               tech="PYTHON . FLASK . POSTGRESQL"
               title="Daily Quiz"
               description="A web-based quiz application built using Flask with PostgreSQL for storing and managing quiz data."
